@@ -226,6 +226,12 @@ header nav .form i {
     border: 1px solid white;
     margin-right: 4px;
 }
+@media (max-width: 767px) {
+    .bullets ul li  {
+        width: 10px;
+        height: 10px;
+    }
+}
 .bullets ul .active {
     background-color: var(--main-color);
     border-color: var(--main-color);
