@@ -869,6 +869,10 @@ header nav .form i {
     caret-color: var(--main-color);
     width: calc(100% - 130px);
     outline: none;
+    color: white;
+}
+.subscribe form ::placeholder {
+    color: white;
 }
 .subscribe form input[type="submit"] {
     background: var(--main-color);
@@ -893,3 +897,126 @@ header nav .form i {
 }
 
 /* End subscribtion  */
+/* Start contact  */
+.contact {
+    padding: var(--section-padding);
+}
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 767px) {
+    .contact .content {
+        flex-direction: column;
+    }
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+}
+.contact form .main-input {
+    display: block;
+    padding: 20px;
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.contact form .main-input:focus {
+    outline: none;
+}
+.contact form input[type="submit"] {
+    padding: 20px;
+    width: fit-content;
+    align-self: flex-end;
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid var(--main-color);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .contact form input[type="submit"] {
+        align-self: center;
+        margin-bottom: 40px;
+    }
+}
+.contact .info {
+    flex-basis: 25%;
+}
+.contact .info h4 {
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.contact .info h4:nth-of-type(2) {
+    margin-top: 90px;
+}
+.contact .info .phone {
+    display: block;
+    color: #777;
+    margin-bottom: 10px;
+}
+.contact .info address {
+    color: #777;
+    line-height: 2;
+}
+@media (max-width: 767px) {
+    .contact .info {
+        order: -1;
+        text-align: center;
+    }
+    .contact .info h4:nth-of-type(2) {
+        margin-top: 30px;
+    }
+    .contact .info address {
+        margin-bottom: 40px;
+    }
+}
+/* End contact  */
+/* Start footer  */
+.footer {
+    padding: 50px 0;
+    background-image: url(../images/subscribe.jpg);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.footer:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0  0  0 / 70%);
+}
+.footer .container {
+    position: relative;
+}
+.footer img {
+    width: 140px;
+    margin-bottom: 20px;
+}
+.footer p:not(.copyright) {
+    font-size: 25px;
+    padding: 20px;
+    margin: 20px auto;
+    border-bottom: 1px solid white;
+    width: fit-content;
+    text-transform: uppercase;
+}
+.footer .social-icons i {
+    padding: 10px 15px;
+    font-size: 18px;
+}
+.footer .copyright {
+    margin-top: 60px;
+}
+.footer .copyright span {
+    color: var(--main-color);
+    font-weight: bold;
+}
+/* End footer  */
